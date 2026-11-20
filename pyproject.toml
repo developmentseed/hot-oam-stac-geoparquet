@@ -1,0 +1,10 @@
+[project]
+name = "hot-oam-stac-geoparquet"
+version = "0.1.0"
+description = "AWS CDK infrastructure for serving OpenAerialMap items via stac-fastapi-geoparquet"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["aws-cdk-lib>=2.277.0", "constructs>=10.4.0"]

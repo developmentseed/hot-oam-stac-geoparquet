@@ -1,0 +1,9 @@
+{
+  "app": "uv run python app.py",
+  "context": {
+    "Project": "hot-oam",
+    "Owner": "gadomski",
+    "Client": "hot",
+    "Stack": "dev"
+  }
+}

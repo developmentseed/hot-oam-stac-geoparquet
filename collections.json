@@ -1,0 +1,87 @@
+[
+  {
+    "type": "Collection",
+    "stac_version": "1.1.0",
+    "stac_extensions": [
+      "https://stac-extensions.github.io/render/v2.0.0/schema.json"
+    ],
+    "id": "openaerialmap",
+    "title": "OpenAerialMap (OAM) STAC Catalog",
+    "description": "OpenAerialMap (OAM) is a set of tools for searching, sharing, and using openly licensed satellite and unmanned aerial vehicle (UAV) imagery.",
+    "license": "CC-BY-4.0",
+    "providers": [
+      {
+        "url": "https://openaerialmap.org/",
+        "name": "OpenAerialMap",
+        "roles": [
+          "host",
+          "licensor"
+        ]
+      }
+    ],
+    "extent": {
+      "spatial": {
+        "bbox": [
+          [
+            -175.517578125,
+            -85.56183624267578,
+            178.57858276367188,
+            90
+          ]
+        ]
+      },
+      "temporal": {
+        "interval": [
+          [
+            "0026-10-21T00:00:00+00:00",
+            "2026-12-11T00:00:00+00:00"
+          ]
+        ]
+      }
+    },
+    "item_assets": {
+      "image": {
+        "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "roles": [
+          "data"
+        ],
+        "title": "Visual image",
+        "description": "Visual imagery data acquired from satellite or unmanned aerial vehicle (UAV)"
+      },
+      "thumbnail": {
+        "type": "image/png",
+        "roles": [
+          "thumbnail"
+        ],
+        "title": "Thumbnail",
+        "description": "Thumbnail version of the image asset for browsing"
+      }
+    },
+    "renders": {
+      "visual": {
+        "title": "Visual image",
+        "assets": [
+          "image"
+        ]
+      }
+    },
+    "links": [
+      {
+        "rel": "license",
+        "href": "https://creativecommons.org/licenses/by/4.0/",
+        "type": "text/html",
+        "title": "CC-BY-4.0 license"
+      }
+    ],
+    "assets": {
+      "data": {
+        "href": "./items-openaerialmap.parquet",
+        "type": "application/vnd.apache.parquet",
+        "title": "OpenAerialMap items (stac-geoparquet)",
+        "roles": [
+          "data"
+        ]
+      }
+    }
+  }
+]
